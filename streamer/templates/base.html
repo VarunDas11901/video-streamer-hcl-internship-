@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content="width= device-width,initial-scale=1.0"> 
+        <title>World Of Books</title>
+        <!-- <link rel="stylesheet" href="{% static 'css/Home.css' %}"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/books.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/humanbooks.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+        <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="{% static 'css/sign.css' %}"> -->
+        <link rel="stylesheet" href="{% static 'css/update.css' %}">
+
+
+  
+
+
+    </head>
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="{% url 'index' %}"><img src="../static/img/logo1.JPG"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="bi bi-x-circle-fill" onclick="hidemenu()"></i>           -->
+                <ul>
+                    <li><a href="{% url 'index' %}">HOME</a></li>
+                    <li><a href="{% url 'books' %}">Books</a></li>
+                    <li><a href="{% url 'humanbooks' %}">HumanBooks</a></li>
+                    <li><a href="{% url 'appoinment' %}">Appoinment</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    <!-- <li><a href="Contact.html">CONTACT US</a></li>
+                    <li><a href="">APPOINMENT</a></li>
+                    <li><a href="log-in.html">LOG-IN</a></li>
+                    <li><a href="sing-up.html">SIGN-UP</a></li> -->
+                </ul>
+            </div>
+            <!-- <i class="bi bi-list" onclick="showmenu()"></i>      -->
+        </nav>
+
+    
+    </header>
+
+
+    <div class="Page_Wrapper">
+        {% block main_content %} {% endblock %}
+    </div>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="../static/img/logo1.JPG" class="logo">
+                <p>Subscribe to our page for exciting offers and quick delivery.Thanks for visiting our page.Hope you like it.</p>
+            </div>
+            <div class="col">
+               <h3>Office <div class="underline"><span></span></div></h3>
+               <p>Dubai Kuruku Santhu</p>
+               <p>Sharga,Dubai</p>
+               <p>Abu Dhabi,PIN 123456,UAE</p>
+               <P class="email-id">kickbuttowski@gmail.com</P>
+               <h4>+91 8653209721</h4>
+            </div>
+            <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3> 
+            <ul>
+            <li><a href="">Home</a></li>   
+            <li><a href="">Services</a></li> 
+            <li><a href="">About Us</a></li> 
+            <li><a href="">Features</a></li> 
+            <li><a href="">Contacts</a></li> 
+            </ul>
+             </div>
+            <div class="col">
+                <h3>NewsLetter<div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="   Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>               
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copy">ART OF GAME © - 2021 All Rights Reserved</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/76cbcdde4b.js"></script>
+
+    {% block extra_js %}
+
+  
+
+    {% endblock %}
+
+</body>
+</html>
+

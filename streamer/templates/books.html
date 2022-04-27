@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load static %}
+ {% block main_content %}
+
+ <div class="content">
+    <div class="books">
+        <h1>WELCOME TO THE WORLD OF BOOKS</h1>
+        <div class="books__container">
+            <div class="books__card">
+                <h2>EXPLORE OUR BOOKS</h2>
+                <p>START READING OUR FUN AND EXCITING BOOKS</p>
+                <button style="margin-top: 20px;"><a style="color: white;" class = "update1" href="{% url 'humanbooks' %}">View Our Books</a></button>
+            </div>
+            <div class="books__card1">
+                <h2>WANA BE A BOOK?</h2>
+                <p>START UPLOADING AND CREATE YOUR OWN BOOKS</p>
+                <button style="margin-top: 20px;"><a style="color: white;"  class = "update" href="{% url 'video' %}">Upload Books</a></button>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+{% endblock %}

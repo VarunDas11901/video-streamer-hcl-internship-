@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %} {% load static %}
+{% block main_content %}
+  <div class="content">
+    <div class="login-wrapper">
+      <form action="{% url 'upload_video' %}" class="form" method="POST" enctype="multipart/form-data">{% csrf_token %}
+        <div class="input-group">
+          <input type="text" name="title" id="Tilte" required>
+          <label for="Title">Title</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="desc" id="desc" required>
+          <label for="desc">Description</label>
+        </div>
+        
+        <div class="input-group">
+          <input type="file" name="thumbnail" id="thumbnail" accept="image/png, image/gif, image/jpeg">
+          <label for="thumbnail" style="color: white;">Thumbnail</label>
+        </div>
+
+        <div class="input-group">
+          <input type="file" name="video" id="video" accept="video/mp4,video/x-m4v,video/*">
+          <label for="video" style="color: white;">Upload Video</label>
+        </div>
+        <input type="submit" value="Video Upload" class="submit-btn">
+        
+      </form>
+    </div>
+  </div>
+  {% endblock %}

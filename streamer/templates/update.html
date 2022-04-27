@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %} {% load static %}
+{% block main_content %}
+  <div class="content">
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <a class="Thumbnail" href="">Thumbail</a>
+        <div class="input-group">
+          <input type="text" name="title" id="Tilte" required>
+          <label for="Title">Title</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="desc" id="desc" required>
+          <label for="desc">Description</label>
+        </div>
+        <input type="submit" value="Video Upload" class="submit-btn">
+      </form>
+    </div>
+  </div>
+  {% endblock %}
