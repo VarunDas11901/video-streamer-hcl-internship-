@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 9, 9);
+}
+nav img{
+    width: 150px;
+
+ }
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+.nav-links ul li{
+ list-style: none;
+ display: inline-block;
+ padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 13px;
+}
+.nav-links ul li ::after{
+ content:'';
+ width: 0;
+ height: 2px;
+ background: #f44336;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+.nav-links ul li :hover::after{
+ width: 100%;
+} */
+.books{
+    background: rgb(14, 9, 9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.books h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right,#ff8177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,#b12a5b 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.books__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.books__card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(../img/beabok.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.books__card1{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url(../img/hbok.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.books h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+.books__card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+.books__card1 p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+.books__card button{
+    color: #fff;
+    padding: 0px 0px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.books__card1 button{
+    color: #fff;
+    padding: 0px 0px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.books__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.books__card1:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.update{
+  display: inline-block;
+  text-decoration: none;
+  color:red;
+  border-radius: 4px;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.update:hover{
+    border: 1px sodid #f44336;
+    background: #f44336;
+    transition: 1s;
+    color:#fff;
+}
+.update1{
+    display: inline-block;
+    text-decoration: none;
+    color:red;
+    border-radius: 4px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .update1:hover{
+      border: 1px sodid #f44336;
+      background: #f44336;
+      transition: 1s;
+      color:#fff;
+  }
+/* footer */
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+.logo{
+     width: 130px;
+     height: 100px;
+     margin-bottom: 30px;
+}
+/* .row{
+     width: 85%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+} */
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2),col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    border-bottom: none;
+}
+ul li a{
+    text-align: none;
+    color: #fff;
+    border-bottom: none;
+}
+/* ul li a::after{
+ content:'';
+ width: 0;
+ height: 2px;
+ background: #f44336;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+ul li a:hover::after{
+  width: 100%;
+} */
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form.far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icon .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copy{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: red;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+    }
+    .col:nth-child(2),col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
