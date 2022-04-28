@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load static %}
+ {% block main_content %}
+
+ <div class="container">
+    <form
+  action="https://formspree.io/f/mpzbydqo"
+  method="POST"
+>
+        <h3>GET IN TOUCH</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Id" required>
+        <input type="text" name="phone" placeholder="Phone no." required>
+        <textarea  name="message"  rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+{% endblock %}
